@@ -1,0 +1,925 @@
+<!--doctype html-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Casques réduction de bruit</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/Headphones.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="assets/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body onload="hideProduct()">
+
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">Sound<strong>Hub</strong></div>
+        <ul class="links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Headphones.html">Casques</a></li>
+            <li><a href="login.html"><img src="assets/Images/reees login.PNG" alt=""></a></li>
+            <li class="cartShowing">
+                <p onclick=" cartShow()"><img src="assets/Images/Shopping cart.PNG" alt=""></p>
+            </li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+
+
+
+    <div class="banner">
+        <h1><strong>Notre séléction de Casques</strong></h1>
+    </div>
+
+
+    <div class="button_grp">
+        <ul>
+            <li data-li="all" class="btn active">Tous</li>
+            <li data-li="silence" class="btn">Réduction de bruit</li>
+            <li data-li="sport" class="btn">Sport</li>
+            <li data-li="high-end" class="btn">Haut de gamme</li>
+            <li data-li="gaming" class="btn">Gaming</li>
+            <!-- <li data-li="less-price" class="btn">Prix croissant</li>
+            <li data-li="higher-price" class="btn">Prix décroissant</li> -->
+        </ul>
+    </div>
+
+
+
+
+    <!-- debut de la partie product card -->
+
+    <!--1------------------------------------>
+    <div class="test">
+        <div class="item sport">
+            <div class="item-a">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="1" src="assets/Images/Bose Sport Earbuds.png">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#">Bose</a>
+                            <span>Sport Earbuds</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">179.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--2------------------------------------>
+        <div class="item sport">
+            <div class="item-b">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="2" src="assets/Images/powerbeats-wireless-earphones-new.png">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll2()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll2()">Beats</a>
+                            <span>Powerbeats Pro</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">159.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--3------------------------------------>
+        <div class="item sport>
+            <div class=" item-c">
+            <!--Boite--------------->
+            <div class="box">
+                <!--image-boite---------->
+                <div class="slide-img">
+                    <img alt="3" src="assets/Images/Ecouteurs sans fil soundsport.png">
+                    <!--overlayer---------->
+                    <div class="overlay">
+                        <!--bouton-overlay------>
+                        <a href="#" class="buy-btn" onclick=" hideAll3()">Voir</a>
+                    </div>
+                </div>
+                <!--detail-box--------->
+                <div class="detail-box">
+                    <!--type-------->
+                    <div class="type">
+                        <a href="#" onclick=" hideAll3()">Bose</a>
+                        <span>Ecouteurs Sans-Fil SoundSport</span>
+                    </div>
+                    <!--price-------->
+                    <a href="#" class="price">139.00 €</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <!--4------------------------------------>
+    <div class="test">
+        <div class="item gaming">
+            <div class="item-d">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="4" src="assets/Images/Steelseries arctis pro.jpg">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="# " class="buy-btn" onclick=" hideAll4()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll4()">SteelSeries</a>
+                            <span>Arctis Pro Wireless </span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">199.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--5------------------------------------>
+
+        <div class="item gaming">
+            <div class="item-e">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="5" src="assets/Images/Logitech G332.jpg">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll5()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll5()">Logitech</a>
+                            <span>G332</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">119.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--6------------------------------------>
+
+        <div class="item gaming">
+            <div class="item-f">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="6" src="assets/Images/Logitech G733 Lightspeed Noir.jpg">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="# " class="buy-btn" onclick=" hideAll6()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll6()">Logitech</a>
+                            <span>G733 LightSpeed</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">189.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--7------------------------------------>
+    <div class="test">
+        <div class="item high-end">
+            <div class="item-g">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="6" src="assets/Images/LV earphones.jpg">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll7()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll7()">Louis Vuitton</a>
+                            <span>Airpods</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">669.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--8------------------------------------>
+
+        <div class="item high-end">
+            <div class="item-h">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="6" src="assets/Images/Audeze lcd gx.jpg">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll8()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll8()">Audeze</a>
+                            <span>
+                                LCD-GX
+                            </span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">1990.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--9------------------------------------>
+
+        <div class="item high-end">
+
+            <div class="item-i">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="6" src="assets/Images/Airpods Pro.jpg">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll9()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll9()">Apple</a>
+                            <span>Pro</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">199.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--10----------------------------------->
+    <div class="test">
+
+
+        <div class="item silence">
+
+            <div class="item-j">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="6" src="assets/Images/Marshall Monitor II ANC.jpg">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll10()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll10()">Marshall</a>
+                            <span>Monitor</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">129.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--11------------------------------------>
+        <div class="item silence">
+
+            <div class="item-k">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="6" src="assets/Images/Bose  Noise Cancelling Headphones 700.png">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll11()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll11()">Bose</a>
+                            <span>Noise Cancelling 700</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">339.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--12----------------------------------->
+
+        <div class="item silence">
+
+            <div class="item-l">
+                <!--Boite--------------->
+                <div class="box">
+                    <!--image-boite---------->
+                    <div class="slide-img">
+                        <img alt="6" src="assets/Images/Bose QC 35 II.png">
+                        <!--overlayer---------->
+                        <div class="overlay">
+                            <!--bouton-overlay------>
+                            <a href="#" class="buy-btn" onclick=" hideAll12()">Voir</a>
+                        </div>
+                    </div>
+                    <!--detail-box--------->
+                    <div class="detail-box">
+                        <!--type-------->
+                        <div class="type">
+                            <a href="#" onclick=" hideAll12()">Bose</a>
+                            <span>QuietComfort II</span>
+                        </div>
+                        <!--price-------->
+                        <a href="#" class="price">249.00 €</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+    <!-- Fin de la partie product card -->
+
+
+
+
+
+
+    <!-- ICI DEBUT DE LA PARTIE CACHEE QUAND ON CHARGE LA PAGE, ELLE S'AFFICHERA EN FONCTION DU PRODUIT QUE L'ON PREND  -->
+
+    <div class="wrapper">
+        <!-- 1 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container1">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Bose Sport Earbuds.png"
+                                alt="Bose-Sport-Earbuds"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Bose Sport Earbuds</h1>
+                        <span class="shop-item-price">259.00 €</span>
+                        <div class="description">
+                            <p>Profitez d’un son puissant et limpide grâce à nos premiers écouteurs intra-auriculaires
+                                entièrement sans fil. Ils sont spécialement conçus pour rester confortablement en place.
+                                Ce concentré de technologies vous aidera à repousser vos limites au cours de vos
+                                entraînements.</p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div> <!-- shop item class div -->
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+
+        <!-- 2 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container2">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/powerbeats-wireless-earphones-new.png"
+                                alt="powerbeats-wireless-earphones"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Beats Powerbeats Pro Wireless</h1>
+                        <span class="shop-item-price">159.00 €</span>
+                        <div class="description">
+                            <p>Avec les contours d'oreille ajustables et différents embouts disponibles, vos écouteurs
+                                restent en place pour accompagner chacun de vos mouvements.</p>
+                            <p>Leur résistance renforcée à l'eau et à la transpiration vous aide à affronter tout ce que
+                                la journée vous réserve.</p>
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+        <!-- 3 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container3">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Ecouteurs sans fil soundsport.png"
+                                alt="Ecouteurs-sans-fil-soundsport"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Bose Ecouteurs SoundSport</h1>
+                        <span class="shop-item-price">139.00 €</span>
+                        <div class="description">
+                            <p>L'exercice physique est une activité exigeante. Et vous souhaitez des écouteurs sans fil
+                                à la hauteur du défi. Les écouteurs sans fil SoundSport, stables et confortables,
+                                accompagnent tous vos mouvements et vous offrent un son puissant. </p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+
+        <!-- 4 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container4">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Steelseries arctis pro.jpg"
+                                alt="Steelseries-arctis-pro"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">
+                            SteelSeries
+                            Arctis Pro Wireless </h1>
+                        <span class="shop-item-price">199.00€</span>
+                        <div class="description">
+                            <p>Le casque audio Arctis Pro est connecté à la station de base émettrice sans fil via la
+                                connexion 2,4 G éprouvée de SteelSeries. Ce système offre un son sans fil à ultra-basse
+                                latence avec une portée allant jusqu'à 40 pieds sans interférence. </p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+
+        <!-- 5 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container5">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Logitech G332.jpg" alt="Logitech-G332">
+                        </div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">
+                            Logitech
+                            G332 </h1>
+                        <span class="shop-item-price">119.00 €</span>
+                        <div class="description">
+                            <p>Le casque gaming Logitech G332 vous permet d'entendre davantage le jeu grâce à ses grands
+                                transducteurs de 50 mm offrant une restitution sonore complète. Équipé de grands
+                                transducteurs 50 mm vous allez entendre encore plus de détails avec un son d'une grande
+                                profondeur et d'une clarté incroyable.</p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+        <!-- 6 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container6">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Logitech G733 Lightspeed Noir.jpg"
+                                alt="Logitech-G733-Lightspeed-Noir"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Logitech G733 LightSpeed</h1>
+                        <span class="shop-item-price">189.00 €</span>
+                        <div class="description">
+                            <p>Entendez tous les sons à la ronde grâce à nos propres transducteurs PRO-G conçus pour un
+                                audio précis et complet. Plongez-vous dans le jeu comme jamais grâce au son surround DTS
+                                Headphone:X 2.0 nouvelle génération.3Les fonctionnalités avancées comme DTS Headphone:X
+                                2.0, Blue VO!CE et LIGHTSYNC RVB ne sont pas disponibles sur la PlayStation 4. Le micro
+                                certifié Discord offre un son incroyable et cristallin.</p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+        <!-- 7 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container7">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/LV earphones.jpg"
+                                alt="louis-vuitton-ecouteurs"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Louis Vuitton Airpods</h1>
+                        <span class="shop-item-price">669.00 €</span>
+                        <div class="description">
+                            <p>Ce dernier accessoire conçu par Louis Vuitton se connecte aux périphériques via Bluetooth
+                                et fonctionnera avec la smartwatch LV qui sortira prochainement. De plus, un étui de
+                                chargement “Horizon Earphones” offre aux écouteurs une autonomie totale de 20 heures.
+                            </p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+        <!-- 8 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container8">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Audeze lcd gx.jpg" alt="Audeze-lcd-gx">
+                        </div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Audeze LCD-GX</h1>
+                        <span class="shop-item-price">1990.00 €</span>
+                        <div class="description">
+                            <p>Le casque Audeze LCD-GX est un le premier casque gaming ouvert exploitant la technologie
+                                Planar Magnetic pour offrir d'excellentes prestations musicales. ll constitue le ticket
+                                d'entrée dans la gamme de casques haute fidélité du fabricant américain. Ce casque
+                                Audeze est livré avec deux câbles détachables haut de gamme : un premier câble mini-jack
+                                3,5 mm avec microphone et une second câble jack 6,35 mm sans microphone. Le casque
+                                Audeze LCD-GX peut ainsi tout aussi bien être utilisé pour écouter de la musique que
+                                pour jouer aux jeux vidéo.</p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+        <!-- 9 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container9">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Airpods Pro.jpg" alt="Airpods-Pro"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Apple Airpods Pro</h1>
+                        <span class="shop-item-price">199.00 €</span>
+                        <div class="description">
+                            <p>Les AirPods Pro sont dotés de la technologie de Réduction active du bruit pour vous
+                                immerger dans le son, d’un mode Transparence pour vous permettre d’écouter ce qu’il se
+                                passe autour de vous, et d’un design adaptatif qui permet de les porter confortablement
+                                toute la journée. À l’instar des AirPods, les AirPods Pro se connectent comme par magie
+                                à votre iPhone ou Apple Watch. Et ils sont prêts à être utilisés dès leur sortie du
+                                boîtier. </p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+        <!-- 10 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container10">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Marshall Monitor II ANC.jpg"
+                                alt="Marshall-Monitor-II-ANC"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Marshall Monitor II</h1>
+                        <span class="shop-item-price">129.00 €</span>
+                        <div class="description">
+                            <p>La technologie de réduction de bruit active avancée bloque les bruits parasites pour vous
+                                permettre de vous concentrer sur l’essentiel : la musique. Conçu pour une expérience
+                                d’écoute qui dure toute la journée, il offre jusqu’à 30 heures de lecture sans fil si la
+                                réduction de bruit est activée, et jusqu’à 45 heures si elle ne l’est pas, pour que vous
+                                ne manquiez jamais de musique. </p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+        <!-- 11 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container11">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Bose  Noise Cancelling Headphones 700.png"
+                                alt="Bose-Noise-Cancelling-Headphones-700"></div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Bose Noise Cancelling 700</h1>
+                        <span class="shop-item-price">339.00 €</span>
+                        <div class="description">
+                            <p>Acclamé par les spécialistes pour sa qualité de réduction de bruit, son puissant son et
+                                sa capture vocale inégalée, le casque Bose Noise Cancelling Headphones 700 transforme
+                                nʼimporte quel espace en un lieu parfait pour écouter de la musique, travailler ou tout
+                                simplement sʼisoler du monde et se détendre pendant quelques instants. Cʼest simple : si
+                                vous cherchez le meilleur casque Bluetooth sans fil pour la musique et les appels, il
+                                est là. Aujourd’hui, nous vous proposons de le découvrir en édition limitée Triple
+                                Midnight.</p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de cette partie  -->
+
+
+        <!-- 12 Partie page produit qui s'affiche quand on clique sur le nom d'un casque  -->
+        <div class="container12">
+            <div class="shop-item">
+
+                <div class="product-content layout horizontal">
+                    <div class="gallery w-50 p-1">
+                        <div class="shop-item-image"><img src="assets/Images/Bose QC 35 II.png" alt="Bose-QC-35-II">
+                        </div>
+
+                    </div>
+                    <div class="product-info w-50 p-1">
+                        <h1 class="shop-item-title">Bose QuietComfort II</h1>
+                        <span class="shop-item-price">249.00 €</span>
+                        <div class="description">
+                            <p>Le casque sans fil QuietComfort 35 II bénéficie d’une technologie de réduction de bruit
+                                réputée. Avec l’Assistant Google et Amazon Alexa intégrés, vous accédez instantanément à
+                                des millions de titres, de playlists et bien plus encore, en mode mains libres.* Il vous
+                                suffit de choisir votre assistant vocal et de lui demander ce que vous voulez.</p>
+
+                        </div>
+                        <button class="shop-item-button">Ajouter au panier</button> <button onclick=" returnPage()"
+                            class="return">Retour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <section class="container content-section">
+        <h2 class="section-header">VOTRE PANIER</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Article</span>
+            
+            <span class="cart-price cart-header cart-column">PRIX</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITÉ</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">TOTAL</strong>
+            <span class="cart-total-price">0€</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">COMMANDER</button> <button onclick=" returnPage()"
+            class="return">Retour</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Fin de cette partie  -->
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="col">
+                <h1>Soundhub</h1>
+                <ul>
+                    <li>A propos</li>
+
+                    <li>Réseaux sociaux</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>Se connecter</li>
+                    <li>Panier</li>
+
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Demande de remboursement</li>
+                    <li>Retour</li>
+                    <li>Service après vente</li>
+                </ul>
+            </div>
+            <div class="col social">
+                <h1>Social</h1>
+                <ul>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+
+                </ul>
+            </div>
+            <div class="test"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
